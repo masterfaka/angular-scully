@@ -12,6 +12,7 @@ import { ComposeMessageComponent } from './compose-message/compose-message.compo
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesModule } from './heroes/heroes.module';
 import { AuthModule } from './auth/auth.module';
+import {ScullyLibModule} from "@scullyio/ng-lib";
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { AuthModule } from './auth/auth.module';
     HeroesModule,
     AuthModule,
     AppRoutingModule,
+    ScullyLibModule
   ],
   declarations: [
     AppComponent,
