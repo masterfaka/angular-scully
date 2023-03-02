@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-import { authGuard } from './auth/auth.guard';
 import { SelectivePreloadingStrategyService } from './selective-preloading-strategy.service';
 
 const appRoutes: Routes = [
@@ -13,17 +12,17 @@ const appRoutes: Routes = [
     component: ComposeMessageComponent,
     outlet: 'popup'
   },
-  {
+/*  {
     path: 'admin',
     loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule),
     canMatch: [authGuard]
-  },
+  },*/
   {
-    path: 'crisis-center',
+    path: 'news-center',
     loadChildren: () => import('./crisis-center/crisis-center.module').then(m => m.CrisisCenterModule),
     data: { preload: true }
   },
-  { path: '',   redirectTo: '/superheroes', pathMatch: 'full' },
+  { path: '',   redirectTo: '/news-center', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -32,7 +31,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       {
-        enableTracing: false, // <-- debugging purposes only
+        enableTracing: true, // <-- debugging purposes only
         preloadingStrategy: SelectivePreloadingStrategyService,
       }
     )

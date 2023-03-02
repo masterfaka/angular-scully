@@ -43,7 +43,7 @@ button {
   margin-top: 1rem;
 }
 button:hover {
-  background-color: black;
+  background: rgb(23, 235, 160);
   color: white;
 }
 button:disabled {
@@ -60,16 +60,21 @@ nav a {
   margin-top: 10px;
   display: inline-block;
   background-color: #e8e8e8;
+  /*background: rgb(1, 169, 130);*/
   color: #3d3d3d;
   border-radius: 4px;
 }
 
 nav a:hover {
   color: white;
-  background-color:  #42545C;
+  /*background-color:  #42545C;*/
+  background-color: rgb(23, 235, 160);
+  /*background-color:  rgb(1, 169, 130);;*/
 }
 nav a.active {
-  background-color: black;
+  /*background-color: black;*/
+  /*background-color: rgb(23, 235, 160);*/
+  background-color: rgb(1, 169, 130);
   color: white;
 }
 hr {

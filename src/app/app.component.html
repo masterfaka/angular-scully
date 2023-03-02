@@ -1,11 +1,18 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    alt="Scullyio Logo"
+    src="assets/img/scullyio-logo.png"
+  />
+</div>
 <div class="wrapper">
-  <h1 class="title">Angular Router</h1>
+  <h1 class="title">Angular + Static Site Generator</h1>
   <nav>
-    <a routerLink="/crisis-center" routerLinkActive="active" ariaCurrentWhenActive="page">Crisis Center</a>
-    <a routerLink="/superheroes" routerLinkActive="active" ariaCurrentWhenActive="page">Heroes</a>
-    <a routerLink="/admin" routerLinkActive="active" ariaCurrentWhenActive="page">Admin</a>
+    <a routerLink="/news-center" routerLinkActive="active" ariaCurrentWhenActive="page">News Center</a>
+    <a routerLink="/superheroes" routerLinkActive="active" ariaCurrentWhenActive="page">Heroes List</a>
+<!--    <a routerLink="/admin" routerLinkActive="active" ariaCurrentWhenActive="page">Admin</a>
     <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
-    <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
+    <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>-->
   </nav>
   <div [@routeAnimation]="getRouteAnimationData()">
     <router-outlet></router-outlet>

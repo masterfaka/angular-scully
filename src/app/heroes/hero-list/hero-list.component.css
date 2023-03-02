@@ -46,7 +46,8 @@
 .heroes .badge {
   padding: .5em .6em;
   color: white;
-  background-color: #435b60;
+  /*background-color: #435b60;*/
+  background: rgb(1, 169, 130);
   min-width: 16px;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
