@@ -20,3 +20,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+additional links:
+- https://jamstack-unscully.netlify.app/news-center
+- https://innovationdays-jamstack.netlify.app/
+- https://app.netlify.com/teams/masterfaka/overview
+
