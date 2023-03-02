@@ -1,6 +1,6 @@
 # JamstackAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/97ed21e2-8320-4cae-9655-5b0b1bbd61f9/deploy-status)](https://app.netlify.com/sites/innovationdays-jamstack/deploys)
 
 ## ScullyIo
 
