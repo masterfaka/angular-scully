@@ -7,5 +7,13 @@ export const config: ScullyConfig = {
   projectName: 'angular-example',
   outDir: './dist/static', // directory for scully build artifacts
   defaultPostRenderers: [],
-  routes: {},
+  routes: {
+    '/superhero/:id':{
+      type: 'json',
+      id:{
+        url:'https://jsonplaceholder.typicode.com/users/',
+        property: 'id'
+      }
+    }
+  },
 };
